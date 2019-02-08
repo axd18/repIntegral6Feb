@@ -5,6 +5,8 @@
  */
 package repasointegral6feb;
 
+import java.util.Scanner;
+
 /**
  *
  * @author adrian
@@ -42,5 +44,15 @@ public class Persona {
     
     public void setDni(){
         this.dni = dni;
+    }
+    
+    public String leePersona(String nombre, String direccion, String dni){
+        Scanner leePersona = new Scanner(System.in);
+        System.out.println("Escriba su nombre: " + nombre);
+        System.out.println("Escriba su direccion: "+ direccion);
+        System.out.println("Escriba su dni: "+ dni);
+        
+        return nombre = leePersona.nextLine();
+   
     }
 }
