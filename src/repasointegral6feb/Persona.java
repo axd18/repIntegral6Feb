@@ -12,11 +12,11 @@ import java.util.Scanner;
  * @author adrian
  */
 public class Persona {
-    private String nombre;
-    private String direccion;
-    private String dni;
+    public String nombre;
+    public String direccion;
+    public String dni;
     
-    public Persona(String name, String direccion, String dni){
+    public Persona(String nombre, String direccion, String dni){
         this.nombre = nombre;
         this.direccion = direccion;
         this.dni = dni;
