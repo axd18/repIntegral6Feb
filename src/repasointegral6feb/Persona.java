@@ -12,9 +12,9 @@ import java.util.Scanner;
  * @author adrian
  */
 public class Persona {
-    public String nombre;
-    public String direccion;
-    public String dni;
+    private String nombre;
+    private String direccion;
+    private String dni;
     
     public Persona(String nombre, String direccion, String dni){
         this.nombre = nombre;
@@ -34,25 +34,17 @@ public class Persona {
         return dni;
     }
     
-    public void setNombre(){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
     
-    public void setDireccion(){
+    public void setDireccion(String direccion){
         this.direccion = direccion;
     }
     
-    public void setDni(){
+    public void setDni(String dni){
         this.dni = dni;
     }
     
-    public String leePersona(String nombre, String direccion, String dni){
-        Scanner leePersona = new Scanner(System.in);
-        System.out.println("Escriba su nombre: " + nombre);
-        System.out.println("Escriba su direccion: "+ direccion);
-        System.out.println("Escriba su dni: "+ dni);
-        
-        return nombre = leePersona.nextLine();
-   
-    }
+    
 }
