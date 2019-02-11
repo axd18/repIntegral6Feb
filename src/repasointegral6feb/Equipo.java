@@ -7,6 +7,7 @@ package repasointegral6feb;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -38,11 +39,31 @@ public class Equipo {
         ArrayList<String> vectorJugadores = new ArrayList<>();
     }
     
-    public Arraylist escribirEquipo(){
-        for (int jugador : vectorJugadores){
+    public Object escribirEquipo(){
+        for (Object jugador : vectorJugadores){
             return jugador;
         }
         return null;
         
+    }
+    
+    public void leerEquipo(){
+        ArrayList vectorJugadores = new ArrayList<>();
+        Scanner leerEquipo = new Scanner(System.in);
+        System.out.println("Nombre: ");
+        String nombre = leerEquipo.next();
+        vectorJugadores.add(nombre);
+        
+        System.out.println("Domicilio: ");
+        String domicilio = leerEquipo.nextLine();
+        vectorJugadores.add(domicilio);
+        
+        System.out.println("DNI: ");
+        String dni = leerEquipo.next();
+        vectorJugadores.add(dni);
+        
+        System.out.println("puesto: ");
+        String puesto =  leerEquipo.next();
+        vectorJugadores.add(puesto);
     }
 }
