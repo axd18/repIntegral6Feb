@@ -20,6 +20,11 @@ public class Persona {
         this.nombre = nombre;
         this.direccion = direccion;
         this.dni = dni;
+        
+        nombre = "Adrian";
+        direccion = "Av. Independencia";
+        dni = "29257290";
+        
     }
     
     public String getNombre(){
@@ -47,4 +52,34 @@ public class Persona {
     }
     
     
+    public String leerPersona(){
+        System.out.println("Ingrese un dato: ");
+        Scanner leerPersona = new Scanner(System.in);
+        
+        
+        if (leerPersona.equals(nombre) && leerPersona.equals(direccion) && leerPersona.equals(dni)){
+           return this.nombre + this.direccion + this.dni;
+        }
+      
+        return null;
+    }
+    
+    
+    
+    public void escribirPersona(){
+        Scanner escribirPersona = new Scanner(System.in);
+        System.out.println("Nombre: ");
+        String nombre = escribirPersona.next();
+        
+        System.out.println("Domicilio: ");
+        String domicilio = escribirPersona.nextLine();
+        
+        System.out.println("DNI: ");
+        String dni = escribirPersona.next();
+        
+    }
+
+    String leerPersona(Persona persona) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
